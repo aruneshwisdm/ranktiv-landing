@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranktiv — WordPress SEO + AEO Plugin | Execution, Not Diagnosis</title>
+    <meta name="description" content="Ranktiv is the WordPress SEO plugin that doesn't just tell you what to fix — it fixes it, with your approval. Native AEO scoring, AI crawler management, and autonomous execution.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+    <div class="container nav__inner">
+        <a href="#" class="nav__logo">
+            <span class="nav__logo-icon">R</span>
+            Ranktiv
+        </a>
+        <div class="nav__links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#aeo">AEO Score</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#" class="btn btn--sm btn--primary">Get Started Free</a>
+        </div>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero__badge">Now in Beta &mdash; Join the Waitlist</div>
+        <h1 class="hero__title">
+            Yoast tells you what to fix.<br>
+            <span class="gradient-text">We fix it.</span>
+        </h1>
+        <p class="hero__subtitle">
+            Ranktiv is the first WordPress SEO plugin with an autonomous execution layer.
+            It generates schema, rewrites meta tags, structures FAQ content, and optimizes
+            for AI search engines &mdash; all queued for your approval before touching the live site.
+        </p>
+        <div class="hero__cta">
+            <a href="#pricing" class="btn btn--lg btn--primary">Start Free on WordPress.org</a>
+            <a href="#how-it-works" class="btn btn--lg btn--outline">See How It Works</a>
+        </div>
+        <div class="hero__stats">
+            <div class="hero__stat">
+                <span class="hero__stat-value">87.6%</span>
+                <span class="hero__stat-label">of websites lack structured data for AI</span>
+            </div>
+            <div class="hero__stat">
+                <span class="hero__stat-value">3.2x</span>
+                <span class="hero__stat-label">higher AI Overview selection with FAQPage schema</span>
+            </div>
+            <div class="hero__stat">
+                <span class="hero__stat-value">25%</span>
+                <span class="hero__stat-label">classic search traffic drop by 2026 (Gartner)</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero__glow"></div>
+</section>
+
+<!-- Problem -->
+<section class="problem" id="problem">
+    <div class="container">
+        <div class="section-label">The Problem</div>
+        <h2 class="section-title">Your SEO plugin shows you red lights.<br>Then leaves you alone with them.</h2>
+        <div class="problem__grid">
+            <div class="problem__card">
+                <div class="problem__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                </div>
+                <h3>Diagnosis without execution</h3>
+                <p>Yoast says "meta description missing." Rank Math says "add FAQ schema." But neither writes the description or generates the schema. You're left to figure it out yourself.</p>
+            </div>
+            <div class="problem__card">
+                <div class="problem__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+                </div>
+                <h3>AI search is eating your traffic</h3>
+                <p>ChatGPT, Perplexity, and Google AI Overviews are answering queries that used to send clicks. If your content isn't structured for AI extraction, you're invisible to the next generation of search.</p>
+            </div>
+            <div class="problem__card">
+                <div class="problem__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                </div>
+                <h3>Scaling SEO is manual labor</h3>
+                <p>800 products. 30 client sites. Every meta tag, schema block, and FAQ section is a manual task. Your SEO team spends 6-8 hours/week on repetitive deployment. That's not strategy — it's data entry.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solution -->
+<section class="solution" id="features">
+    <div class="container">
+        <div class="section-label">The Solution</div>
+        <h2 class="section-title">An SEO plugin that actually <span class="gradient-text">does the work</span></h2>
+        <p class="section-desc">Ranktiv consumes intelligence from Google Search Console, Ahrefs, and Semrush. AI agents generate fixes. You review and approve. Changes deploy automatically.</p>
+
+        <div class="features__grid">
+            <div class="feature-card feature-card--highlight">
+                <div class="feature-card__badge">Core Differentiator</div>
+                <h3>Approval Queue</h3>
+                <p>Every AI-generated change &mdash; meta tags, schema, FAQ blocks, redirects &mdash; lands in a review queue. You see the exact diff, a plain-English explanation, and one-click approve or dismiss. Nothing touches your live site without your deliberate "yes."</p>
+                <div class="feature-card__visual">
+                    <div class="queue-item">
+                        <div class="queue-item__badge queue-item__badge--schema">Schema</div>
+                        <div class="queue-item__text">Add FAQPage schema to "How to Optimize for AI Search"</div>
+                        <div class="queue-item__actions">
+                            <span class="queue-btn queue-btn--approve">Approve</span>
+                            <span class="queue-btn queue-btn--dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                    <div class="queue-item">
+                        <div class="queue-item__badge queue-item__badge--meta">Meta</div>
+                        <div class="queue-item__text">Rewrite meta description for "Product Category: Hiking Boots"</div>
+                        <div class="queue-item__actions">
+                            <span class="queue-btn queue-btn--approve">Approve</span>
+                            <span class="queue-btn queue-btn--dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                    <div class="queue-item">
+                        <div class="queue-item__badge queue-item__badge--aeo">AEO</div>
+                        <div class="queue-item__text">Add direct-answer paragraph to "What is Answer Engine Optimization?"</div>
+                        <div class="queue-item__actions">
+                            <span class="queue-btn queue-btn--approve">Approve</span>
+                            <span class="queue-btn queue-btn--dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>AI Agent Team</h3>
+                <p>Specialized agents for on-page optimization, schema generation, technical audits, AEO scoring, and content structure. Each agent proposes targeted fixes through the approval queue.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </div>
+                <h3>Schema Autopilot</h3>
+                <p>Auto-detects content type and generates Article, Product, FAQPage, HowTo, BreadcrumbList, Organization, LocalBusiness, and WebSite schema. Server-side JSON-LD, validated against Google's requirements.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h3>AEO Content Scoring</h3>
+                <p>100-point, 8-dimension rubric scores every page for AI search readiness. Answer prominence, FAQ structure, entity clarity, structural scannability, E-E-A-T signals — all scored in real-time.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </div>
+                <h3>AI Crawler Dashboard</h3>
+                <p>Manage GPTBot, ClaudeBot, PerplexityBot, and Google-Extended access from one screen. Auto-generate llms.txt to control what AI models can index. Monitor AI referral traffic from ChatGPT, Perplexity, and Gemini.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h3>Technical Audit Engine</h3>
+                <p>Crawls all published pages, identifies missing schema, broken internal links, orphan pages, thin content, and AEO gaps. Generates prioritized fix list, then queues the fixes for approval.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works" id="how-it-works">
+    <div class="container">
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">From audit to execution in 4 steps</h2>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step__number">01</div>
+                <div class="step__content">
+                    <h3>Audit</h3>
+                    <p>Ranktiv crawls your site, analyzes every page against 50+ SEO and AEO criteria, and identifies what's broken, missing, or underperforming.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__number">02</div>
+                <div class="step__content">
+                    <h3>Generate</h3>
+                    <p>AI agents generate targeted fixes: meta descriptions, schema markup, FAQ sections, internal link suggestions, entity annotations, and structural improvements.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__number">03</div>
+                <div class="step__content">
+                    <h3>Approve</h3>
+                    <p>Every proposed change appears in your approval queue with a diff preview and plain-English explanation. Review, approve, or dismiss &mdash; nothing deploys without your explicit yes.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__number">04</div>
+                <div class="step__content">
+                    <h3>Execute</h3>
+                    <p>Approved changes deploy to your live site automatically. Weekly reports show what changed, what improved, and what to focus on next. One-click revert if anything looks off.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AEO Score -->
+<section class="aeo" id="aeo">
+    <div class="container">
+        <div class="section-label">Answer Engine Optimization</div>
+        <h2 class="section-title">The first WordPress plugin with native <span class="gradient-text">AEO scoring</span></h2>
+        <p class="section-desc">AI search engines are rewriting how people find information. Ranktiv scores every page for AI citation readiness with a 100-point, 8-dimension rubric &mdash; then generates the fixes to improve your score.</p>
+
+        <div class="aeo__grid">
+            <div class="aeo__score-display">
+                <div class="aeo__score-ring">
+                    <svg viewBox="0 0 120 120" class="aeo__ring-svg">
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="#1a1a2e" stroke-width="8"/>
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="url(#gradient)" stroke-width="8" stroke-dasharray="254" stroke-dashoffset="76" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#6366f1"/>
+                                <stop offset="100%" stop-color="#06b6d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="aeo__score-value">78</div>
+                </div>
+                <div class="aeo__score-label">AEO Readiness Score</div>
+            </div>
+
+            <div class="aeo__dimensions">
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>Answer Readiness</span>
+                        <span class="aeo__dim-score">22/25</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:88%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>Schema Coverage</span>
+                        <span class="aeo__dim-score">16/20</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:80%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>Entity Clarity</span>
+                        <span class="aeo__dim-score">12/15</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:80%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>FAQ Structure</span>
+                        <span class="aeo__dim-score">10/15</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:67%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>Structural Scannability</span>
+                        <span class="aeo__dim-score">8/10</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:80%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>E-E-A-T Signals</span>
+                        <span class="aeo__dim-score">5/5</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:100%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>Snippet Readiness</span>
+                        <span class="aeo__dim-score">3/5</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:60%"></div></div>
+                </div>
+                <div class="aeo__dim">
+                    <div class="aeo__dim-header">
+                        <span>Freshness</span>
+                        <span class="aeo__dim-score">2/5</span>
+                    </div>
+                    <div class="aeo__dim-bar"><div class="aeo__dim-fill" style="width:40%"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comparison -->
+<section class="comparison">
+    <div class="container">
+        <div class="section-label">Why Switch</div>
+        <h2 class="section-title">What you get that others don't</h2>
+
+        <div class="comparison__table-wrap">
+            <table class="comparison__table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th class="comparison__highlight">Ranktiv</th>
+                        <th>Yoast Premium</th>
+                        <th>Rank Math Pro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Autonomous execution with approval gate</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>AEO content scoring (100-point rubric)</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>AI crawler management dashboard</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>llms.txt auto-generation</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td>Toggle only</td>
+                    </tr>
+                    <tr>
+                        <td>FAQ/HowTo auto-detection + schema</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td>Manual block</td>
+                        <td>Manual block</td>
+                    </tr>
+                    <tr>
+                        <td>Scheduled re-scanning</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>E-E-A-T signal scoring</td>
+                        <td class="comparison__highlight">Free tier</td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Price (25 sites)</td>
+                        <td class="comparison__highlight">$249/yr</td>
+                        <td>$2,975/yr</td>
+                        <td>$1,475/yr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Personas -->
+<section class="personas" id="personas">
+    <div class="container">
+        <div class="section-label">Built For You</div>
+        <h2 class="section-title">Whether you run one blog or thirty client sites</h2>
+
+        <div class="personas__grid">
+            <div class="persona-card">
+                <div class="persona-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+                </div>
+                <div class="persona-card__label">Solo Creators</div>
+                <h3>"I know AI search matters, but I don't have time to learn the technical stuff."</h3>
+                <p>You write great content. Ranktiv handles the schema, FAQ structure, entity markup, and AI optimization behind the scenes. Review the suggestions, click approve, and get back to writing.</p>
+                <ul class="persona-card__benefits">
+                    <li>AEO score improves within days, not months</li>
+                    <li>No code, no JSON-LD, no robots.txt editing</li>
+                    <li>Saves 3-5 hours/month of SEO busywork</li>
+                </ul>
+                <div class="persona-card__price">From <strong>$99/year</strong></div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </div>
+                <div class="persona-card__label">WooCommerce Stores</div>
+                <h3>"I have 800 products and I'm only optimizing the top 20."</h3>
+                <p>Ranktiv auto-generates Product schema for your entire catalog, queues them for quick review, and reports which product pages AI shopping assistants can now discover. Same cost as two months of freelancer work.</p>
+                <ul class="persona-card__benefits">
+                    <li>Product schema at scale, not one-by-one</li>
+                    <li>AI shopping assistant visibility tracking</li>
+                    <li>Replaces $200/month freelancer with $249/year plugin</li>
+                </ul>
+                <div class="persona-card__price">From <strong>$249/year</strong></div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="persona-card__label">Agencies</div>
+                <h3>"I spend 6 hours a week on repetitive schema deployment across 30 sites."</h3>
+                <p>Configure schema templates once, deploy across your entire portfolio with per-client approval gates. White-label reports. Bulk operations. AEO scoring as an upsell service. $5/site instead of $93-$215/client/month.</p>
+                <ul class="persona-card__benefits">
+                    <li>93% cost reduction vs Yoast at scale</li>
+                    <li>Per-client approval gates protect trust</li>
+                    <li>AEO services at 30-60% pricing premium</li>
+                </ul>
+                <div class="persona-card__price">From <strong>$499/year</strong> for 100 sites</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Start free. Scale when ready.</h2>
+        <p class="section-desc">No credit card required. The free tier is the trial &mdash; use it as long as you want.</p>
+
+        <div class="pricing__grid">
+            <div class="pricing-card">
+                <div class="pricing-card__header">
+                    <h3>Free</h3>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__amount">$0</span>
+                        <span class="pricing-card__period">forever</span>
+                    </div>
+                    <p class="pricing-card__desc">Core SEO + AEO basics for one site</p>
+                </div>
+                <ul class="pricing-card__features">
+                    <li>1 site</li>
+                    <li>Basic AEO score</li>
+                    <li>1 manual agent run/month</li>
+                    <li>AI crawler dashboard</li>
+                    <li>E-E-A-T signal scoring</li>
+                    <li>Technical SEO audit</li>
+                </ul>
+                <a href="#" class="btn btn--block btn--outline">Install Free</a>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card__header">
+                    <h3>Solo</h3>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__amount">$99</span>
+                        <span class="pricing-card__period">/year</span>
+                    </div>
+                    <p class="pricing-card__desc">Full AEO + automation for creators</p>
+                </div>
+                <ul class="pricing-card__features">
+                    <li>1 site</li>
+                    <li>Full 100-point AEO scoring</li>
+                    <li>20 AI agent runs/month</li>
+                    <li>All schema types</li>
+                    <li>FAQ auto-generator</li>
+                    <li>llms.txt management</li>
+                    <li>Scheduled re-scanning</li>
+                </ul>
+                <a href="#" class="btn btn--block btn--primary">Get Solo</a>
+            </div>
+
+            <div class="pricing-card pricing-card--popular">
+                <div class="pricing-card__tag">Most Popular</div>
+                <div class="pricing-card__header">
+                    <h3>Professional</h3>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__amount">$249</span>
+                        <span class="pricing-card__period">/year</span>
+                    </div>
+                    <p class="pricing-card__desc">Multi-site power for stores &amp; small agencies</p>
+                </div>
+                <ul class="pricing-card__features">
+                    <li><strong>Up to 25 sites</strong></li>
+                    <li>100 AI agent runs/month</li>
+                    <li>Ahrefs/Semrush integration</li>
+                    <li>Bulk operations</li>
+                    <li>Priority email support</li>
+                    <li>Content brief generator</li>
+                    <li>Everything in Solo</li>
+                </ul>
+                <a href="#" class="btn btn--block btn--primary">Get Professional</a>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card__header">
+                    <h3>Agency</h3>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__amount">$499</span>
+                        <span class="pricing-card__period">/year</span>
+                    </div>
+                    <p class="pricing-card__desc">Portfolio-scale for agencies</p>
+                </div>
+                <ul class="pricing-card__features">
+                    <li><strong>Up to 100 sites</strong></li>
+                    <li>500 AI agent runs/month pooled</li>
+                    <li>White-label reporting</li>
+                    <li>Role-based access</li>
+                    <li>Bulk approval workflows</li>
+                    <li>API access</li>
+                    <li>Priority support</li>
+                    <li>Everything in Professional</li>
+                </ul>
+                <a href="#" class="btn btn--block btn--outline">Get Agency</a>
+            </div>
+        </div>
+
+        <p class="pricing__note">All plans billed annually. Prices in USD. 30-day money-back guarantee.</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2 class="cta__title">Stop diagnosing.<br><span class="gradient-text">Start executing.</span></h2>
+        <p class="cta__desc">Join the waitlist and be among the first WordPress users to optimize for AI search with an autonomous execution layer.</p>
+        <div class="cta__actions">
+            <a href="#" class="btn btn--lg btn--primary">Join the Waitlist</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__brand">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-icon">R</span>
+                Ranktiv
+            </a>
+            <p>The WordPress SEO plugin that executes, not just diagnoses.</p>
+        </div>
+        <div class="footer__links">
+            <div class="footer__col">
+                <h4>Product</h4>
+                <a href="#features">Features</a>
+                <a href="#aeo">AEO Score</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#how-it-works">How It Works</a>
+            </div>
+            <div class="footer__col">
+                <h4>Resources</h4>
+                <a href="#">Documentation</a>
+                <a href="#">Changelog</a>
+                <a href="#">Roadmap</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer__col">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__bottom">
+            <p>&copy; 2026 Ranktiv. Built for WordPress.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
