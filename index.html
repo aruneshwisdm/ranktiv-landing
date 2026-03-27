@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranktiv — WordPress SEO + AEO Plugin | Execution, Not Diagnosis</title>
-    <meta name="description" content="Ranktiv is the WordPress SEO plugin that doesn't just tell you what to fix — it fixes it, with your approval. Native AEO scoring, AI crawler management, and autonomous execution.">
+    <meta name="description" content="Ranktiv is the WordPress SEO plugin that doesn't just tell you what to fix — it fixes it, with your approval. AI agents generate content, track competitors, find link opportunities, and optimize for AI search engines.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
         </a>
         <div class="nav__links">
             <a href="#features">Features</a>
+            <a href="#agents">Agents</a>
             <a href="#how-it-works">How It Works</a>
             <a href="#aeo">AEO Score</a>
             <a href="#pricing">Pricing</a>
@@ -42,8 +43,8 @@
         </h1>
         <p class="hero__subtitle">
             Ranktiv is the first WordPress SEO plugin with an autonomous execution layer.
-            It generates schema, rewrites meta tags, structures FAQ content, and optimizes
-            for AI search engines &mdash; all queued for your approval before touching the live site.
+            AI agents generate schema, rewrite content, track competitors, find link opportunities,
+            and optimize for AI search engines &mdash; all queued for your approval before touching the live site.
         </p>
         <div class="hero__cta">
             <a href="#pricing" class="btn btn--lg btn--primary">Start Free on WordPress.org</a>
@@ -109,7 +110,7 @@
             <div class="feature-card feature-card--highlight">
                 <div class="feature-card__badge">Core Differentiator</div>
                 <h3>Approval Queue</h3>
-                <p>Every AI-generated change &mdash; meta tags, schema, FAQ blocks, redirects &mdash; lands in a review queue. You see the exact diff, a plain-English explanation, and one-click approve or dismiss. Nothing touches your live site without your deliberate "yes."</p>
+                <p>Every AI-generated change &mdash; meta tags, schema, content drafts, FAQ blocks, redirects &mdash; lands in a review queue. You see the exact diff, the data that triggered it, expected AEO/SEO score impact, and one-click approve or dismiss. Nothing touches your live site without your deliberate "yes."</p>
                 <div class="feature-card__visual">
                     <div class="queue-item">
                         <div class="queue-item__badge queue-item__badge--schema">Schema</div>
@@ -120,8 +121,8 @@
                         </div>
                     </div>
                     <div class="queue-item">
-                        <div class="queue-item__badge queue-item__badge--meta">Meta</div>
-                        <div class="queue-item__text">Rewrite meta description for "Product Category: Hiking Boots"</div>
+                        <div class="queue-item__badge queue-item__badge--content">Content</div>
+                        <div class="queue-item__text">Refresh "WordPress SEO Guide" &mdash; 5 sections updated, AEO 42 &rarr; 71</div>
                         <div class="queue-item__actions">
                             <span class="queue-btn queue-btn--approve">Approve</span>
                             <span class="queue-btn queue-btn--dismiss">Dismiss</span>
@@ -135,6 +136,14 @@
                             <span class="queue-btn queue-btn--dismiss">Dismiss</span>
                         </div>
                     </div>
+                    <div class="queue-item">
+                        <div class="queue-item__badge queue-item__badge--meta">Intel</div>
+                        <div class="queue-item__text">Weekly Competitive Brief &mdash; competitor-a.com published AI SEO Guide, now #4</div>
+                        <div class="queue-item__actions">
+                            <span class="queue-btn queue-btn--approve">View</span>
+                            <span class="queue-btn queue-btn--dismiss">Dismiss</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -142,16 +151,8 @@
                 <div class="feature-card__icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                 </div>
-                <h3>AI Agent Team</h3>
-                <p>Specialized agents for on-page optimization, schema generation, technical audits, AEO scoring, and content structure. Each agent proposes targeted fixes through the approval queue.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-card__icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </div>
-                <h3>Schema Autopilot</h3>
-                <p>Auto-detects content type and generates Article, Product, FAQPage, HowTo, BreadcrumbList, Organization, LocalBusiness, and WebSite schema. Server-side JSON-LD, validated against Google's requirements.</p>
+                <h3>13 Schema Types, Auto-Generated</h3>
+                <p>Article, FAQPage, HowTo, Product, Course, Organization, BreadcrumbList, Person, Speakable, DefinedTerm, Review, WebSite, and more. Server-side JSON-LD in a single @graph, validated against Google Rich Results.</p>
             </div>
 
             <div class="feature-card">
@@ -159,23 +160,121 @@
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 </div>
                 <h3>AEO Content Scoring</h3>
-                <p>100-point, 8-dimension rubric scores every page for AI search readiness. Answer prominence, FAQ structure, entity clarity, structural scannability, E-E-A-T signals — all scored in real-time.</p>
+                <p>100-point, 8-dimension rubric scores every page for AI search readiness. Answer readiness, schema coverage, entity clarity, FAQ structure, scannability, E-E-A-T, snippet readiness, and freshness &mdash; scored in real-time on save.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+                </div>
+                <h3>AI Content Writer</h3>
+                <p>Takes a content brief and generates first-draft posts optimized for SEO and AEO from the start. Outline, section-by-section writing, FAQ generation, meta tags &mdash; all in one pipeline. Cost: ~$0.09 per article.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-card__icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 </div>
-                <h3>AI Crawler Dashboard</h3>
-                <p>Manage GPTBot, ClaudeBot, PerplexityBot, and Google-Extended access from one screen. Auto-generate llms.txt to control what AI models can index. Monitor AI referral traffic from ChatGPT, Perplexity, and Gemini.</p>
+                <h3>Competitor Intelligence</h3>
+                <p>Weekly automated briefs: who published what, which rankings shifted, where they gained backlinks, and what schema they adopted. Actionable insights, not raw data. LLM-powered summaries in your approval queue.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                </div>
+                <h3>Link Opportunity Finder</h3>
+                <p>Surfaces broken links, unlinked brand mentions, guest post targets, resource pages, and competitor backlink gaps. Pre-written outreach templates included. You send &mdash; we find where to look.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3>Keyword Strategy Engine</h3>
+                <p>Monthly analysis: keyword universe expansion, multi-factor opportunity scoring (volume, difficulty, AEO potential, competitive gap), topic clustering, and an auto-generated content calendar.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-card__icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                 </div>
-                <h3>Technical Audit Engine</h3>
-                <p>Crawls all published pages, identifies missing schema, broken internal links, orphan pages, thin content, and AEO gaps. Generates prioritized fix list, then queues the fixes for approval.</p>
+                <h3>Content Refresh Agent</h3>
+                <p>Detects decaying pages, diagnoses the cause (stale content, competitor published, schema gap, lost backlinks), and generates section-by-section refresh plans with before/after diffs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-card__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>AI Crawler Dashboard</h3>
+                <p>Manage GPTBot, ClaudeBot, PerplexityBot, and 7 more AI crawlers from one screen. robots.txt audit, llms.txt auto-generation, per-page meta robots, and AI referral traffic tracking.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Agent System -->
+<section class="agents" id="agents">
+    <div class="container">
+        <div class="section-label">Agent System</div>
+        <h2 class="section-title">A team of AI agents that <span class="gradient-text">work while you sleep</span></h2>
+        <p class="section-desc">Each agent runs on a schedule, consumes data from your integrations, generates targeted proposals, and routes everything through the approval queue. Agents communicate via an event bus &mdash; one agent's output triggers the next.</p>
+
+        <div class="agents__grid">
+            <div class="agent-card">
+                <div class="agent-card__schedule">Wed 04:00</div>
+                <h3>Content Refresh</h3>
+                <p>Diagnoses declining pages. Builds section-by-section refresh plans using LLM rewrites.</p>
+                <div class="agent-card__meta">
+                    <span>15K tokens/run</span>
+                    <span>Triggers: decay detected, manual</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-card__schedule">Manual</div>
+                <h3>Content Writer</h3>
+                <p>Generates full first-draft articles from content briefs. Outline, sections, FAQ, meta &mdash; AEO-optimized.</p>
+                <div class="agent-card__meta">
+                    <span>25K tokens/draft</span>
+                    <span>~$0.09/article</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-card__schedule">Fri 02:00</div>
+                <h3>Competitor Intelligence</h3>
+                <p>Rankings, new content, schema gaps, backlink deltas. LLM-powered weekly brief.</p>
+                <div class="agent-card__meta">
+                    <span>5K tokens/run</span>
+                    <span>Tracks up to 5 competitors</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-card__schedule">1st of month</div>
+                <h3>Keyword Strategist</h3>
+                <p>Keyword universe expansion, opportunity scoring, topic clustering, content calendar generation.</p>
+                <div class="agent-card__meta">
+                    <span>10K tokens/run</span>
+                    <span>Feeds content pipeline</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-card__schedule">Sun 02:30</div>
+                <h3>AI Crawler Manager</h3>
+                <p>Audits robots.txt for AI crawlers, manages meta robots, recommends crawler access settings.</p>
+                <div class="agent-card__meta">
+                    <span>10 crawlers tracked</span>
+                    <span>llms.txt generation</span>
+                </div>
+            </div>
+            <div class="agent-card agent-card--pipeline">
+                <div class="agent-card__schedule">Full Pipeline</div>
+                <h3>End-to-End Content Production</h3>
+                <p>Keyword Strategy &rarr; Content Brief &rarr; Content Writer &rarr; Approval Queue &rarr; Published Post &rarr; AEO Scorer &rarr; Schema Executor</p>
+                <div class="agent-card__meta">
+                    <span>Fully automated pipeline</span>
+                    <span>Human approval at every stage</span>
+                </div>
             </div>
         </div>
     </div>
@@ -199,21 +298,21 @@
                 <div class="step__number">02</div>
                 <div class="step__content">
                     <h3>Generate</h3>
-                    <p>AI agents generate targeted fixes: meta descriptions, schema markup, FAQ sections, internal link suggestions, entity annotations, and structural improvements.</p>
+                    <p>AI agents generate targeted fixes: meta descriptions, schema markup, FAQ sections, content drafts, refresh plans, competitive briefs, and link opportunities.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step__number">03</div>
                 <div class="step__content">
                     <h3>Approve</h3>
-                    <p>Every proposed change appears in your approval queue with a diff preview and plain-English explanation. Review, approve, or dismiss &mdash; nothing deploys without your explicit yes.</p>
+                    <p>Every proposed change appears in your approval queue with a diff preview, expected score impact, and plain-English explanation. Review, approve, edit, or dismiss &mdash; nothing deploys without your explicit yes.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step__number">04</div>
                 <div class="step__content">
                     <h3>Execute</h3>
-                    <p>Approved changes deploy to your live site automatically. Weekly reports show what changed, what improved, and what to focus on next. One-click revert if anything looks off.</p>
+                    <p>Approved changes deploy to your live site automatically. Weekly reports show what changed, what improved, and what to focus on next. One-click revert if anything looks off. Agents learn from your approvals over time.</p>
                 </div>
             </div>
         </div>
@@ -304,6 +403,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="aeo__extras">
+            <div class="aeo__extra">
+                <h4>Share of Model (SoM)</h4>
+                <p>Track what percentage of AI queries cite your brand vs competitors across Bing AI, Perplexity, and Google AI Overviews.</p>
+            </div>
+            <div class="aeo__extra">
+                <h4>Citation Tracking</h4>
+                <p>Query sampling engine checks 10-20 queries/week against AI platforms. Know which pages are being cited, where, and how often.</p>
+            </div>
+            <div class="aeo__extra">
+                <h4>AI Referral Analytics</h4>
+                <p>Track traffic from ChatGPT, Claude, Perplexity, and Gemini via GA4 integration. See which pages AI sends visitors to.</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -337,7 +451,31 @@
                         <td><span class="cross">&#10005;</span></td>
                     </tr>
                     <tr>
-                        <td>AI crawler management dashboard</td>
+                        <td>AI content writer (brief &rarr; draft)</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td>Basic AI</td>
+                    </tr>
+                    <tr>
+                        <td>Competitor intelligence agent</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Keyword strategy + content calendar</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Link opportunity finder (5 types)</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>AI crawler management (10+ crawlers)</td>
                         <td class="comparison__highlight"><span class="check">&#10003;</span></td>
                         <td><span class="cross">&#10005;</span></td>
                         <td><span class="cross">&#10005;</span></td>
@@ -349,20 +487,26 @@
                         <td>Toggle only</td>
                     </tr>
                     <tr>
-                        <td>FAQ/HowTo auto-detection + schema</td>
-                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
-                        <td>Manual block</td>
-                        <td>Manual block</td>
-                    </tr>
-                    <tr>
-                        <td>Scheduled re-scanning</td>
+                        <td>Share of Model (SoM) metric</td>
                         <td class="comparison__highlight"><span class="check">&#10003;</span></td>
                         <td><span class="cross">&#10005;</span></td>
                         <td><span class="cross">&#10005;</span></td>
                     </tr>
                     <tr>
-                        <td>E-E-A-T signal scoring</td>
-                        <td class="comparison__highlight">Free tier</td>
+                        <td>Content decay detection + auto-refresh</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Multi-site agency hub with RBAC</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                        <td><span class="cross">&#10005;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Scheduled agent re-scanning</td>
+                        <td class="comparison__highlight"><span class="check">&#10003;</span></td>
                         <td><span class="cross">&#10005;</span></td>
                         <td><span class="cross">&#10005;</span></td>
                     </tr>
@@ -375,6 +519,41 @@
                 </tbody>
             </table>
         </div>
+    </div>
+</section>
+
+<!-- Integrations -->
+<section class="integrations" id="integrations">
+    <div class="container">
+        <div class="section-label">Integrations</div>
+        <h2 class="section-title">Consumes intelligence from the tools you already use</h2>
+        <div class="integrations__grid">
+            <div class="integration">
+                <div class="integration__name">Google Search Console</div>
+                <div class="integration__desc">Queries, impressions, clicks, CTR, positions. Daily sync via OAuth 2.0.</div>
+            </div>
+            <div class="integration">
+                <div class="integration__name">Google Analytics 4</div>
+                <div class="integration__desc">AI referral traffic tracking from ChatGPT, Claude, Perplexity, and Gemini.</div>
+            </div>
+            <div class="integration">
+                <div class="integration__name">Ahrefs API v3</div>
+                <div class="integration__desc">Domain Rating, backlinks, referring domains, organic keywords. Weekly sync.</div>
+            </div>
+            <div class="integration">
+                <div class="integration__name">Semrush API</div>
+                <div class="integration__desc">Authority Score, keyword difficulty, organic keywords. Weekly domain sync.</div>
+            </div>
+            <div class="integration">
+                <div class="integration__name">Bing Webmaster Tools</div>
+                <div class="integration__desc">AI Performance data: citations, grounding queries. IndexNow push on publish.</div>
+            </div>
+            <div class="integration">
+                <div class="integration__name">WooCommerce + LearnDash</div>
+                <div class="integration__desc">Auto-generate Product, Offer, Course, and Review schema from your data.</div>
+            </div>
+        </div>
+        <p class="integrations__note">All API keys encrypted at rest via sodium_crypto_secretbox(). Your credentials never leave your server.</p>
     </div>
 </section>
 
@@ -452,11 +631,13 @@
                 </div>
                 <ul class="pricing-card__features">
                     <li>1 site</li>
-                    <li>Basic AEO score</li>
+                    <li>AEO + SEO scoring in editor</li>
                     <li>1 manual agent run/month</li>
-                    <li>AI crawler dashboard</li>
-                    <li>E-E-A-T signal scoring</li>
-                    <li>Technical SEO audit</li>
+                    <li>Article/BlogPosting schema</li>
+                    <li>GSC data view-only</li>
+                    <li>Technical SEO audit (read-only)</li>
+                    <li>XML sitemap generation</li>
+                    <li>Meta title/description editor</li>
                 </ul>
                 <a href="#" class="btn btn--block btn--outline">Install Free</a>
             </div>
@@ -473,11 +654,15 @@
                 <ul class="pricing-card__features">
                     <li>1 site</li>
                     <li>Full 100-point AEO scoring</li>
-                    <li>20 AI agent runs/month</li>
-                    <li>All schema types</li>
-                    <li>FAQ auto-generator</li>
+                    <li>Unlimited manual agent runs</li>
+                    <li>4 scheduled sweeps/month</li>
+                    <li><strong>All 13 schema types</strong></li>
+                    <li>Approval queue (approve/reject/edit)</li>
                     <li>llms.txt management</li>
-                    <li>Scheduled re-scanning</li>
+                    <li>AI crawler dashboard</li>
+                    <li>IndexNow integration</li>
+                    <li>Settings import (Yoast, Rank Math, AIOSEO)</li>
+                    <li>Monthly PDF report</li>
                 </ul>
                 <a href="#" class="btn btn--block btn--primary">Get Solo</a>
             </div>
@@ -494,11 +679,17 @@
                 </div>
                 <ul class="pricing-card__features">
                     <li><strong>Up to 25 sites</strong></li>
-                    <li>100 AI agent runs/month</li>
-                    <li>Ahrefs/Semrush integration</li>
+                    <li>12 scheduled sweeps/site/month</li>
+                    <li>Ahrefs + Semrush integration</li>
+                    <li><strong>Competitor intelligence agent</strong></li>
+                    <li><strong>Keyword strategy + content calendar</strong></li>
+                    <li><strong>Content writer agent</strong></li>
+                    <li><strong>Link opportunity finder</strong></li>
+                    <li>Content refresh agent</li>
+                    <li>Citation tracking + SoM metric</li>
+                    <li>White-label PDF reports</li>
                     <li>Bulk operations</li>
-                    <li>Priority email support</li>
-                    <li>Content brief generator</li>
+                    <li>Priority support (24h SLA)</li>
                     <li>Everything in Solo</li>
                 </ul>
                 <a href="#" class="btn btn--block btn--primary">Get Professional</a>
@@ -515,12 +706,17 @@
                 </div>
                 <ul class="pricing-card__features">
                     <li><strong>Up to 100 sites</strong></li>
-                    <li>500 AI agent runs/month pooled</li>
-                    <li>White-label reporting</li>
-                    <li>Role-based access</li>
-                    <li>Bulk approval workflows</li>
-                    <li>API access</li>
-                    <li>Priority support</li>
+                    <li>Unlimited agent runs</li>
+                    <li><strong>Agency Hub dashboard</strong></li>
+                    <li><strong>Role-based access (4 roles)</strong></li>
+                    <li>Cross-site bulk approval</li>
+                    <li>White-label plugin branding</li>
+                    <li>REST API access</li>
+                    <li>Custom schema templates</li>
+                    <li>QBR report generator</li>
+                    <li>Client-facing [ranktiv-dashboard] shortcode</li>
+                    <li>Priority support (12h SLA + Slack)</li>
+                    <li>1-hour onboarding session</li>
                     <li>Everything in Professional</li>
                 </ul>
                 <a href="#" class="btn btn--block btn--outline">Get Agency</a>
@@ -528,6 +724,38 @@
         </div>
 
         <p class="pricing__note">All plans billed annually. Prices in USD. 30-day money-back guarantee.</p>
+    </div>
+</section>
+
+<!-- Numbers -->
+<section class="numbers">
+    <div class="container">
+        <div class="numbers__grid">
+            <div class="numbers__item">
+                <div class="numbers__value">107</div>
+                <div class="numbers__label">PHP Classes</div>
+            </div>
+            <div class="numbers__item">
+                <div class="numbers__value">5</div>
+                <div class="numbers__label">AI Agents</div>
+            </div>
+            <div class="numbers__item">
+                <div class="numbers__value">13</div>
+                <div class="numbers__label">Schema Types</div>
+            </div>
+            <div class="numbers__item">
+                <div class="numbers__value">17</div>
+                <div class="numbers__label">Database Tables</div>
+            </div>
+            <div class="numbers__item">
+                <div class="numbers__value">6</div>
+                <div class="numbers__label">Integrations</div>
+            </div>
+            <div class="numbers__item">
+                <div class="numbers__value">12</div>
+                <div class="numbers__label">Event Types</div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -556,6 +784,7 @@
             <div class="footer__col">
                 <h4>Product</h4>
                 <a href="#features">Features</a>
+                <a href="#agents">Agents</a>
                 <a href="#aeo">AEO Score</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#how-it-works">How It Works</a>
